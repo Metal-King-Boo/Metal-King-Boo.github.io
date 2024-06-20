@@ -4,7 +4,42 @@
 }
 
 body {
-    background-color: blue;
+    background-color: indigo;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: bitFont;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0; /* width is changed with JavaScript*/
+    position: fixed;
+    z-index: 1; /*stay on top*/
+    top: 0; /*stay at the top*/
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden; /*disables horizontal scroll*/
+    padding-top:  60px;
+    transition: 0.5s; 
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/*invest in making every other part of the screen close the side tab*/
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
